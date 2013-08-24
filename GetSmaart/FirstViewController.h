@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface FirstViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate> {
+    
+}
+@property (retain, nonatomic) IBOutlet UITableView *tableView;
+@property (retain, nonatomic) NSArray *results;
+@property (retain, nonatomic) NSMutableArray *displayItems;
+@property (retain, nonatomic) IBOutlet UISearchBar *serchBar;
+@property (retain, nonatomic)  NSDictionary *tweet;
 @end

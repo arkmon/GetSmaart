@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  AboutViewController.h
 //  GetSmaart
 //
 //  Created by Arkadiusz Dowejko on 23/08/2013.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UITableViewController
+@interface AboutViewController : UIViewController
 
 @end

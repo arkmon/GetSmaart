@@ -17,12 +17,16 @@
 		557524DE17C7FB7A0089D4F5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 557524DD17C7FB7A0089D4F5 /* Default@2x.png */; };
 		557524E017C7FB7A0089D4F5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 557524DF17C7FB7A0089D4F5 /* Default-568h@2x.png */; };
 		557524E317C7FB7A0089D4F5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557524E117C7FB7A0089D4F5 /* MainStoryboard.storyboard */; };
-		557524E617C7FB7A0089D4F5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557524E517C7FB7A0089D4F5 /* FirstViewController.m */; };
 		557524E817C7FB7A0089D4F5 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 557524E717C7FB7A0089D4F5 /* first.png */; };
 		557524EA17C7FB7A0089D4F5 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 557524E917C7FB7A0089D4F5 /* first@2x.png */; };
-		557524ED17C7FB7A0089D4F5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557524EC17C7FB7A0089D4F5 /* SecondViewController.m */; };
 		557524EF17C7FB7A0089D4F5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 557524EE17C7FB7A0089D4F5 /* second.png */; };
 		557524F117C7FB7A0089D4F5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 557524F017C7FB7A0089D4F5 /* second@2x.png */; };
+		557524F917C7FBFE0089D4F5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557524F817C7FBFE0089D4F5 /* FirstViewController.m */; };
+		557524FC17C7FCE10089D4F5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557524FB17C7FCE10089D4F5 /* SecondViewController.m */; };
+		557524FF17C7FD660089D4F5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557524FE17C7FD660089D4F5 /* AboutViewController.m */; };
+		55D63A2B17C803E7006B2370 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D63A2A17C803E7006B2370 /* SystemConfiguration.framework */; };
+		55D63A2E17C80456006B2370 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D63A2C17C80427006B2370 /* MobileCoreServices.framework */; };
+		CDD72FF3B9A349AE9C24BC85 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB0539A79E044FDA3109564 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,14 +44,20 @@
 		557524DD17C7FB7A0089D4F5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		557524DF17C7FB7A0089D4F5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		557524E217C7FB7A0089D4F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		557524E417C7FB7A0089D4F5 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		557524E517C7FB7A0089D4F5 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		557524E717C7FB7A0089D4F5 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		557524E917C7FB7A0089D4F5 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		557524EB17C7FB7A0089D4F5 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		557524EC17C7FB7A0089D4F5 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		557524EE17C7FB7A0089D4F5 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		557524F017C7FB7A0089D4F5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		557524F717C7FBFE0089D4F5 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		557524F817C7FBFE0089D4F5 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		557524FA17C7FCE10089D4F5 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		557524FB17C7FCE10089D4F5 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		557524FD17C7FD660089D4F5 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		557524FE17C7FD660089D4F5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		55D63A2A17C803E7006B2370 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		55D63A2C17C80427006B2370 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		928EA74CBCA34E4B8FCC6DAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CBB0539A79E044FDA3109564 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +65,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D63A2E17C80456006B2370 /* MobileCoreServices.framework in Frameworks */,
+				55D63A2B17C803E7006B2370 /* SystemConfiguration.framework in Frameworks */,
 				557524CA17C7FB790089D4F5 /* UIKit.framework in Frameworks */,
 				557524CC17C7FB790089D4F5 /* Foundation.framework in Frameworks */,
 				557524CE17C7FB790089D4F5 /* CoreGraphics.framework in Frameworks */,
+				CDD72FF3B9A349AE9C24BC85 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +83,7 @@
 				557524CF17C7FB790089D4F5 /* GetSmaart */,
 				557524C817C7FB790089D4F5 /* Frameworks */,
 				557524C717C7FB790089D4F5 /* Products */,
+				928EA74CBCA34E4B8FCC6DAB /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,9 +98,12 @@
 		557524C817C7FB790089D4F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55D63A2C17C80427006B2370 /* MobileCoreServices.framework */,
+				55D63A2A17C803E7006B2370 /* SystemConfiguration.framework */,
 				557524C917C7FB790089D4F5 /* UIKit.framework */,
 				557524CB17C7FB790089D4F5 /* Foundation.framework */,
 				557524CD17C7FB790089D4F5 /* CoreGraphics.framework */,
+				CBB0539A79E044FDA3109564 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,13 +113,15 @@
 			children = (
 				557524D817C7FB7A0089D4F5 /* AppDelegate.h */,
 				557524D917C7FB7A0089D4F5 /* AppDelegate.m */,
+				557524F717C7FBFE0089D4F5 /* FirstViewController.h */,
+				557524F817C7FBFE0089D4F5 /* FirstViewController.m */,
+				557524FD17C7FD660089D4F5 /* AboutViewController.h */,
+				557524FE17C7FD660089D4F5 /* AboutViewController.m */,
 				557524E117C7FB7A0089D4F5 /* MainStoryboard.storyboard */,
-				557524E417C7FB7A0089D4F5 /* FirstViewController.h */,
-				557524E517C7FB7A0089D4F5 /* FirstViewController.m */,
 				557524E717C7FB7A0089D4F5 /* first.png */,
+				557524FA17C7FCE10089D4F5 /* SecondViewController.h */,
+				557524FB17C7FCE10089D4F5 /* SecondViewController.m */,
 				557524E917C7FB7A0089D4F5 /* first@2x.png */,
-				557524EB17C7FB7A0089D4F5 /* SecondViewController.h */,
-				557524EC17C7FB7A0089D4F5 /* SecondViewController.m */,
 				557524EE17C7FB7A0089D4F5 /* second.png */,
 				557524F017C7FB7A0089D4F5 /* second@2x.png */,
 				557524D017C7FB790089D4F5 /* Supporting Files */,
@@ -131,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 557524F417C7FB7B0089D4F5 /* Build configuration list for PBXNativeTarget "GetSmaart" */;
 			buildPhases = (
+				5F8D2ABA52264E51BBC61C5A /* Check Pods Manifest.lock */,
 				557524C217C7FB790089D4F5 /* Sources */,
 				557524C317C7FB790089D4F5 /* Frameworks */,
 				557524C417C7FB790089D4F5 /* Resources */,
+				EE0EE171013D44AD9893D7D6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,6 +210,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F8D2ABA52264E51BBC61C5A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		EE0EE171013D44AD9893D7D6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		557524C217C7FB790089D4F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -196,8 +248,9 @@
 			files = (
 				557524D617C7FB790089D4F5 /* main.m in Sources */,
 				557524DA17C7FB7A0089D4F5 /* AppDelegate.m in Sources */,
-				557524E617C7FB7A0089D4F5 /* FirstViewController.m in Sources */,
-				557524ED17C7FB7A0089D4F5 /* SecondViewController.m in Sources */,
+				557524F917C7FBFE0089D4F5 /* FirstViewController.m in Sources */,
+				557524FC17C7FCE10089D4F5 /* SecondViewController.m in Sources */,
+				557524FF17C7FD660089D4F5 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,22 +332,26 @@
 		};
 		557524F517C7FB7B0089D4F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928EA74CBCA34E4B8FCC6DAB /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GetSmaart/GetSmaart-Prefix.pch";
 				INFOPLIST_FILE = "GetSmaart/GetSmaart-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		557524F617C7FB7B0089D4F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928EA74CBCA34E4B8FCC6DAB /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GetSmaart/GetSmaart-Prefix.pch";
 				INFOPLIST_FILE = "GetSmaart/GetSmaart-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -318,6 +375,7 @@
 				557524F617C7FB7B0089D4F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
