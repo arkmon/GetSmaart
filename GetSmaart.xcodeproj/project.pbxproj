@@ -26,6 +26,7 @@
 		557524FF17C7FD660089D4F5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557524FE17C7FD660089D4F5 /* AboutViewController.m */; };
 		55D63A2B17C803E7006B2370 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D63A2A17C803E7006B2370 /* SystemConfiguration.framework */; };
 		55D63A2E17C80456006B2370 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D63A2C17C80427006B2370 /* MobileCoreServices.framework */; };
+		55D63A3117C8D37A006B2370 /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D63A3017C8D37A006B2370 /* ArticleViewController.m */; };
 		CDD72FF3B9A349AE9C24BC85 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB0539A79E044FDA3109564 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		557524FE17C7FD660089D4F5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		55D63A2A17C803E7006B2370 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		55D63A2C17C80427006B2370 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		55D63A2F17C8D37A006B2370 /* ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
+		55D63A3017C8D37A006B2370 /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
 		928EA74CBCA34E4B8FCC6DAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		CBB0539A79E044FDA3109564 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,6 +120,8 @@
 				557524F817C7FBFE0089D4F5 /* FirstViewController.m */,
 				557524FD17C7FD660089D4F5 /* AboutViewController.h */,
 				557524FE17C7FD660089D4F5 /* AboutViewController.m */,
+				55D63A2F17C8D37A006B2370 /* ArticleViewController.h */,
+				55D63A3017C8D37A006B2370 /* ArticleViewController.m */,
 				557524E117C7FB7A0089D4F5 /* MainStoryboard.storyboard */,
 				557524E717C7FB7A0089D4F5 /* first.png */,
 				557524FA17C7FCE10089D4F5 /* SecondViewController.h */,
@@ -251,6 +256,7 @@
 				557524F917C7FBFE0089D4F5 /* FirstViewController.m in Sources */,
 				557524FC17C7FCE10089D4F5 /* SecondViewController.m in Sources */,
 				557524FF17C7FD660089D4F5 /* AboutViewController.m in Sources */,
+				55D63A3117C8D37A006B2370 /* ArticleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

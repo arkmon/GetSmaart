@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "AFNetworking.h"
+#import "ArticleViewController.h"
 
 @interface FirstViewController ()
 
@@ -27,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _navigationItem.titleView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"title_bar.png"]];
     
     //NSLog(@"Up and running");
 	// Do any additional setup after loading the view, typically from a nib.
@@ -166,5 +168,17 @@
      [detailViewController release];
      */
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showDetail"]) { // if my table is clicked
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow]; //define the path for selected row
+        NSArray *object = _displayItems[indexPath.row]; //put only selected lecturer to new array
+        NSLog(@"String %@", object); // show me what is inside
+        [[segue destinationViewController] setDetailItem:object]; // send the array to the next view
+    }
+    
+}
+
 
 @end
