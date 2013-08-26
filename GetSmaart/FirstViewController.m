@@ -9,6 +9,7 @@
 #import "FirstViewController.h"
 #import "AFNetworking.h"
 #import "ArticleViewController.h"
+#import "CustomNavigationBar.h"
 
 @interface FirstViewController ()
 
@@ -28,8 +29,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _navigationItem.titleView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"title_bar.png"]];
     
+    self.navigationItem.titleView = [self titleView];
+    self.navigationItem.rightBarButtonItem = [self checkInButton];
+       
     //NSLog(@"Up and running");
 	// Do any additional setup after loading the view, typically from a nib.
     self.tableView.backgroundColor = [UIColor colorWithRed:0.96 green:0.95 blue:0.90 alpha:1.0];
@@ -63,6 +66,60 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+- (UIView *)titleView {
+    CGFloat navBarHeight = self.navigationController.navigationBar.frame.size.height;
+    CGFloat width = 0.95 * self.view.frame.size.width;
+    UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, navBarHeight)];
+    
+    UIImage *logo = [UIImage imageNamed:@"logo.png"];
+    UIButton *logoButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    CGFloat logoY = floorf((navBarHeight - logo.size.height) / 2.0f);
+    [logoButton setFrame:CGRectMake(0, logoY, logo.size.width, logo.size.height)];
+    [logoButton setImage:logo forState:UIControlStateNormal];
+    
+    UIImage *bubble = [UIImage imageNamed:@"notification-bubble-empty.png"];
+    UIImageView *bubbleView = [[UIImageView alloc] initWithImage:bubble];
+    
+    const CGFloat Padding = 5.0f;
+    CGFloat bubbleX =
+    logoButton.frame.size.width +
+    logoButton.frame.origin.x +
+    Padding;
+    CGFloat bubbleY = floorf((navBarHeight - bubble.size.height) / 2.0f);
+    CGRect bubbleRect = bubbleView.frame;
+    bubbleRect.origin.x = bubbleX;
+    bubbleRect.origin.y = bubbleY;
+    bubbleView.frame = bubbleRect;
+    
+    [containerView addSubview:logoButton];
+    [containerView addSubview:bubbleView];
+    
+    return containerView;
+}
+
+- (UIBarButtonItem *)checkInButton {
+    UIImage *checkInImage = [UIImage imageNamed:@"global-checkin-button.png"];
+    UIImage *checkInPressed = [UIImage imageNamed:@"global-checkin-button-pressed.png"];
+    UIButton *checkInButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [checkInButton setBackgroundImage:checkInImage forState:UIControlStateNormal];
+    [checkInButton setBackgroundImage:checkInPressed forState:UIControlStateHighlighted];
+    
+    const CGFloat BarButtonOffset = 5.0f;
+    [checkInButton setFrame:CGRectMake(BarButtonOffset, 0, checkInImage.size.width, checkInImage.size.height)];
+    
+    UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, checkInImage.size.width, checkInImage.size.height)];
+    [containerView addSubview:checkInButton];
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:containerView];
+    return item;
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
